@@ -26,6 +26,7 @@
 		"project": "./tsconfig.json" // This line was added
 	},
 	"plugins": ["react", "@typescript-eslint", "prefer-arrow"],
+	"ignorePatterns": ["*.config.cjs", "*.config.js"],
 	"rules": {
 		"@typescript-eslint/no-var-requires": "off", // Disallows the use of require statements except in import statements
 		"@typescript-eslint/naming-convention": [
