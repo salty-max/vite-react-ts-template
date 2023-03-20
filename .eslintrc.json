@@ -14,6 +14,7 @@
 		"plugin:import/warnings",
 		"plugin:import/typescript",
 		"plugin:storybook/recommended", //https://github.com/storybookjs/eslint-plugin-storybook#readme
+		"plugin:jest/recommended",
 		"prettier"
 	],
 	"parser": "@typescript-eslint/parser",
@@ -25,7 +26,7 @@
 		"sourceType": "module",
 		"project": "./tsconfig.json" // This line was added
 	},
-	"plugins": ["react", "@typescript-eslint", "prefer-arrow"],
+	"plugins": ["react", "@typescript-eslint", "prefer-arrow", "jest"],
 	"ignorePatterns": ["*.config.cjs", "*.config.js"],
 	"rules": {
 		"@typescript-eslint/no-var-requires": "off", // Disallows the use of require statements except in import statements

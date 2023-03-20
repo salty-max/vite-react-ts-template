@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin")
 const defaultConfig = require("tailwindcss/defaultConfig")
+const colorSystem = require("./colors.json")
 
 // eslint-disable-next-line no-undef
 module.exports = {
