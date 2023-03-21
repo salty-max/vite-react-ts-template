@@ -38,7 +38,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [16.14.0]
     
     steps:
       - name: Checkout repository
@@ -52,14 +52,5 @@ jobs:
       - name: Install dependencies
         run: yarn
       
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-      
       - name: Build Storybook
         run: yarn build-storybook --quiet
-      
-      - name: Serve Storybook
-        run: |
-          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server storybook-static --port 6006 --silent"
-
