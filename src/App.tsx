@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react"
+import { FC, useState } from "react"
 
 export const App: FC = () => {
 	const [counter, setCounter] = useState<number>(0)

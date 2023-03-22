@@ -97,6 +97,8 @@
     ], // Only allow "interface" to be used
     // TODO enable this rule later
     // "react/jsx-no-bind": "error", // Disallow the use of lambdas and binds in callbacks in jsx
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "react/jsx-no-target-blank": "error", // Warn when using target="_blank" without rel="noreferrer"
     "react/no-unescaped-entities": [
       "error",

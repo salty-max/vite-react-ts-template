@@ -32,6 +32,7 @@
     "@storybook/addon-interactions": "next",
     "@storybook/addon-links": "next",
     "@storybook/builder-vite": "next",
+    "@storybook/react": "next",
     "@storybook/react-vite": "next",
     "@storybook/testing-library": "next",
     "@tailwindcss/forms": "^0.5.3",
