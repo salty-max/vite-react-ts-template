@@ -6,6 +6,6 @@ export default {
 	component: App,
 }
 
-const Template: StoryFn = (args) => <App {...args} />
+const Template: StoryFn<typeof App> = (args) => <App {...args} />
 
 export const Default = Template.bind({})
